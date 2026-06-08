@@ -13,3 +13,5 @@ if (supabaseUrl && supabaseAnonKey) {
 
 export { supabase };
 export default supabase;
+
+// Force redeploy 20260608184924
