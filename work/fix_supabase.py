@@ -1,4 +1,4 @@
-import { createClient } from "@supabase/supabase-js";
+﻿code = '''import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "";
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
@@ -13,3 +13,7 @@ if (supabaseUrl && supabaseAnonKey) {
 
 export { supabase };
 export default supabase;
+'''
+with open(r'C:\Users\付建康\Documents\Codex\2026-06-06\web-react-tailwind-css-leancloud-vercel\campus-circle\src\config\supabase.js', 'w', encoding='utf-8') as f:
+    f.write(code)
+print('Fixed supabase.js')
